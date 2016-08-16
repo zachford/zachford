@@ -3,12 +3,15 @@
 <head>
   <title>Website</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <link href='https://fonts.googleapis.com/css?family=Muli' rel='stylesheet' type='text/css'>
+  <script src="https://use.typekit.net/txp0icb.js"></script>
+	<script>try{Typekit.load({ async: true });}catch(e){}</script>
 
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
+<div class="post_wrapper">
+<!--
 	<div id="sidebar">
 		<div id="logo">
 			<%= link_to root_path do %>
@@ -36,7 +39,11 @@
 			<p class="sign_in"><%= link_to "Admin Login" %></p>
 			<% end %>
 	</div>
-	<div id="main_content">
+-->
+
+
+		<% if user_signed_in? %>
+
 		<div id="header">
 		<% if current_page?(root_path) %>
 		<p>All Posts</p>
@@ -46,22 +53,24 @@
 			<%= link_to "Back to All Posts", root_path %>
 		<% end %>
 
-		<% if user_signed_in? %>
-
 		<div class="buttons">
 			<button class="button"><%= link_to "New Post", new_post_path %></button>
-			<button class="button">Log out</button>
+			<button class="button"><%= link_to('Log Out', destroy_user_session_path, :method => :delete) %></button> 
+		<% else %>
 
 		<% end %>
+		</div>
 
-	</div>
 </div>
+	<div id="main_content">
 
 	<% flash.each do |name, msg| %>
 		<%= content_tag(:div, msg, class: "alert") %>
 	<% end %> 
 
 <%= yield %>
+</div>
+</div>
 </div>
 
 </body>
