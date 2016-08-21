@@ -1,5 +1,19 @@
-<div id="post_content">
+<div id="page_wrapper">
 
+<div class="top_nav">
+		<ul>
+				<li class="blog">
+
+				<%= link_to "blog", posts_path %>
+				
+				</li>
+				<li class="design"><%= link_to "design", design_path %></li>
+				<li class="music"><%= link_to "music", music_path %></li>
+				<li class="other"><%= link_to "other", other_path %></li>
+
+		</ul>
+</div>
+<div id="post_content">
 <h1 class="title">	
 	<%= @post.title %>
 </h1>
@@ -24,4 +38,5 @@
 	<h3>Add a comment:</h3>
 	<%= render "comments/form" %>
 	</div>
+</div>
 </div>

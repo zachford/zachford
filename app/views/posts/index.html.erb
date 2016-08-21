@@ -1,3 +1,18 @@
+<div id="page_wrapper">
+
+<div class="top_nav">
+		<ul>
+				<li class="blog">
+
+				<%= link_to "blog", posts_path %>
+				
+				</li>
+				<li class="design"><%= link_to "design", design_path %></li>
+				<li class="music"><%= link_to "music", music_path %></li>
+				<li class="other"><%= link_to "other", other_path %></li>
+
+		</ul>
+</div>
 
 <% @posts.each do |post| %>
 <div class="post_wrapper">
@@ -6,3 +21,5 @@
 	<p class="date"><%= post.created_at.strftime("%B, %d, %Y") %> </p>
 </div>
 <% end %>
+
+</div>

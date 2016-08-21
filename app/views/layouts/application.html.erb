@@ -40,7 +40,17 @@
 			<% end %>
 	</div>
 -->
+		<br>  
+		<div id="zach_header">
+		<% if current_page?(home_path) %>
 
+		<% else %>
+			<%= link_to "ZACH FORD", home_path %>
+		<% end %>
+			
+
+
+		</div>
 
 		<% if user_signed_in? %>
 
