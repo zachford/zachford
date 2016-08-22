@@ -17,6 +17,7 @@
 
 @import 'normalize';
 @import 'mininav';
+@import 'socialfooter';
 
 html, body {
 	font-family: 'Futura', sans-serif;
@@ -31,6 +32,10 @@ a {
 	text-decoration: none;
 	color: inherit;
 }
+
+
+
+
 
 
 .home_header {
@@ -67,7 +72,7 @@ a {
 	margin: 0 auto;
 	float: left;
 	clear: both;
-	padding: 6em 0 0 0;
+	padding: 4em 0 0 0;
 
 
 	ul {
@@ -208,6 +213,7 @@ a {
 
 
 	.post_wrapper {
+		text-align: center;
 		padding: 2.7em;
 		border-bottom: 1px solid #d6dce0;
 		.title {
@@ -215,15 +221,16 @@ a {
 			a {
 				font-weight: 500;
 				text-decoration: none;
-				color: #2a2f35;
+				color: #656c75;
 				font-size: 1.5em;
 				&:hover {
-					color: #33acb7;
+					transition: all .3s ease;
+					color: #D6D6D6;
 				}
 			}
 		}
 		.date_and_author {
-			color: #9eafba;
+			color: #D6D6D6;
 			margin: .5em 0 0 0;
 		}
 	}
@@ -232,7 +239,7 @@ a {
 		.title {
 			font-weight: 500;
 			text-decoration: none;
-			color: #2a2f35;
+			color: #656c75;
 			font-size: 2.5em;
 			margin-bottom: 0;
 		}
@@ -241,7 +248,7 @@ a {
 			line-height: 1.75;
 		}
 		.date_and_author {
-			color: #9eafba;
+			color: #D6D6D6;
 			margin: .5em 0 2em 0;
 		}
 		#comments {
@@ -288,7 +295,7 @@ a {
 		}
 	}
 	#page_wrapper {
-		padding: 3em;
+		padding: 2.7em;
 		#profile_image {
 			width: 300px;
 			float: left;
@@ -307,12 +314,15 @@ a {
 				line-height: 1.75;
 			}
 			a {
-				color: #33acb7;
+				color: #D6D6D6;
 				font-weight: 700;
 				text-decoration: none;
 			}
 		}
 	}
+
+
+
 	.links {
 		margin: 2em 0;
 	}
