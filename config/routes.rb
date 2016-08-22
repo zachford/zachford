@@ -5,7 +5,7 @@ resources :posts do
 	resources :comments
 end
 
-root "posts#index"
+root "pages#home"
 
  get '/about', to: 'pages#about'
 
