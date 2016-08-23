@@ -21,6 +21,7 @@
 
 html, body {
 	font-family: 'Futura', sans-serif;
+	color: #505050;
 }
 
 
@@ -60,7 +61,21 @@ a {
 
 
 
+.linebreak {
+				width: 70%;
+				margin: 0 auto;
+				border-bottom: 1px solid #d6dce0;
+				padding-top: 2em;
 
+			}
+
+
+p.date {
+
+	color: #D6D6D6;
+	text-align: center;
+ font-size: .5em;
+}
 
 
 
@@ -214,8 +229,7 @@ a {
 
 	.post_wrapper {
 		text-align: center;
-		padding: 2.7em;
-		border-bottom: 1px solid #d6dce0;
+		padding-top: 2.5em;
 		.title {
 			margin: 0;
 			a {
@@ -237,9 +251,10 @@ a {
 	#post_content {
 		padding: 1em 3em;
 		.title {
+			text-align: center;
 			font-weight: 500;
 			text-decoration: none;
-			color: #656c75;
+			color: #505050;
 			font-size: 2.5em;
 			margin-bottom: 0;
 		}
