@@ -18,6 +18,7 @@
 @import 'normalize';
 @import 'mininav';
 @import 'socialfooter';
+@import 'work';
 
 html, body {
 	font-family: 'Futura', sans-serif;
@@ -40,17 +41,76 @@ a {
 
 
 .home_header {
+  margin: 0 auto;
 	text-align: center;
+	transition: all .4s ease;
+					&:hover {
+
+				transform: scale(1.2);
+						
+	}
+
 
 	a {
-
+							
 		font-size: 5em;
 		color: #D6D6D6;
+				transition: all .4s ease;
+				&:hover {
+				transform: scale(1.9);
+						
 	}
 }
+}
+
+.home_header span {
+    -webkit-transition: 0.6s;
+    -moz-transition: 0.6s;
+    -o-transition: 0.6s;
+    transition: 0.6s;
+    -webkit-transition-delay: 0.2s;
+    -moz-transition-delay: 0.2s;
+    -o-transition-delay: 0.2s;
+    transition-delay: 0.2s;
+}
+
+
+
+/*
+.home_header :before{
+		content: 'ZACH FORD';
+
+}
+
+
+.home_header a:hover :before {
+		position: relative;
+		display: none;
+
+
+}
+
+.home_header:hover  :after{
+    content: 'WHO I AM';
+ a {
+
+				transition: all .3s ease-in;
+				&:hover {
+				color: #FFFFFF;
+	 }
+	}
+}
+*/
 
 #zach_header {
 	text-align: center;
+		transition: all .2s ease;
+		&:hover {
+
+				transform: scale(1.2);
+						
+	}
+
 
 	a {
 		padding-top: 50px;
@@ -74,7 +134,7 @@ p.date {
 
 	color: #D6D6D6;
 	text-align: center;
- font-size: .5em;
+ font-size: .8em;
 }
 
 
@@ -103,6 +163,7 @@ p.date {
 				background: #656C75;
 					transition: all .5s ease;
 					&:hover {
+					transform: scale(1.2);
 					opacity: 0.6;
 			}	
 		}
@@ -111,6 +172,7 @@ p.date {
 			background: #AFB8BE;
 				transition: all .5s ease;
 				&:hover {
+				transform: scale(1.2);
 				opacity: 0.6;
 				}
 		}
@@ -119,6 +181,7 @@ p.date {
 			background: #A6D8E8;
 				transition: all .5s ease;
 				&:hover {
+				transform: scale(1.2);
 				opacity: 0.6;
 				}
 		}
@@ -127,6 +190,7 @@ p.date {
 			background: #64C6E6;
 				transition: all .5s ease;
 				&:hover {
+				transform: scale(1.2);
 				opacity: 0.6;
 				}
 		}
@@ -310,7 +374,10 @@ p.date {
 		}
 	}
 	#page_wrapper {
-		padding: 2.7em;
+
+		padding-top: 2.7em;
+		padding-right: 6.7em;
+		padding-left: 6.7em;
 		#profile_image {
 			width: 300px;
 			float: left;
@@ -322,6 +389,7 @@ p.date {
 		}
 		#content {
 			h1 {
+				text-align: center;
 				font-weight: 500;
 			}
 			p {
@@ -336,6 +404,32 @@ p.date {
 		}
 	}
 
+			#about_content {
+
+				text-align: center;
+
+			h1 {
+				text-align: center;
+				font-weight: 500;
+			}
+			p {
+				font-size: 1.1em;
+				line-height: 1.75;
+			}
+			a {
+
+				color: #64c6e6;
+				font-size: 15px;
+				text-decoration: none;
+				transition: all .2s ease;
+				&:hover {
+				font-size: 17px;
+				transform: scale(1.9);
+						
+				}
+			}
+		}
+	}
 
 
 	.links {
@@ -368,4 +462,3 @@ p.date {
 			color: #33acb7;
 		}
 	}
-}
