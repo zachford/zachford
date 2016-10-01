@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-  devise_for :users
+  devise_for :users, :controllers => { registrations: 'registrations' }
 resources :posts do
 	resources :comments
 end
@@ -11,7 +11,7 @@ root "pages#home"
 
  get '/home', to: 'pages#home'
 
- get '/design', to: 'pages#design'
+ get '/work', to: 'pages#work'
 
  get '/music', to: 'pages#music'
 

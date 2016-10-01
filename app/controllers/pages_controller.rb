@@ -6,7 +6,7 @@ class PagesController < ApplicationController
 	def about
 	end
 
-	def design
+	def work
 	end
 
 	def music
